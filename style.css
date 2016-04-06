@@ -1,0 +1,152 @@
+/* -------------------------------------------------------------------------- */
+/* -----| STYLES |----------------------------------------------------------- */
+/* -----| created for iGravity Design 2013 Homepage |------------------------ */
+/* -------------------------------------------------------------------------- */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -----| GENERAL |---------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+body{
+	margin:0;
+	font-family:'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	background: #f9f9f9 url('images/background.png') repeat;
+	font-size:14px;
+	line-height: 1.6em;
+	color: #222;
+	text-shadow: 0 1px 0 #fff;
+}
+a {
+	color: #222;
+	text-decoration: none;
+}
+a:hover {
+	color: #666;
+}
+img{
+	border:none;
+}
+.Left {
+	float:left;
+}
+.Right{
+	float:right;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -----| GENERAL |---------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#SplishSplash {
+	width: 400px;
+	height: 140px;
+	position: absolute;
+	left: 50%;
+	margin-left: -200px;
+	top: 50%;
+	margin-top: -70px;
+	text-align: center;
+}
+
+#SplishSplash h1 {
+	font-size: 48px;
+	line-height: 1.2em;
+	font-weight: 300;
+	text-transform: lowercase;
+	cursor: default;
+}
+
+#SplishSplash h1 span {
+	font-weight: 400;
+}
+
+#SplishSplash p {
+	text-transform: lowercase;
+	font-size: 18px;
+	cursor: default;
+}
+
+#SplishSplash ul {
+	list-style: none;
+	width: 300px;
+	margin: 16px auto 0 auto;
+}
+
+#SplishSplash ul li {
+	float: left;
+	display: block;
+	margin-right: 30px;
+}
+
+#SplishSplash ul li.Last {
+	margin-right: 0;
+}
+
+.Email {
+	float: left;
+	width: 17px;
+	height: 12px;
+	margin: 6px 8px 0 0;
+	background: url('images/icon_sprite.png') no-repeat 0 0;
+}
+
+.Phone {
+	float: left;
+	width: 14px;
+	height: 18px;
+	margin: 2px 8px 0 0;
+	background: url('images/icon_sprite.png') no-repeat 0 -24px;
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi) {
+
+body {
+	background: url ('images/background@2x.png') repeat;
+	background-size: 46px 23px;
+}
+
+.Email {
+	background: url('images/icon_sprite@2x.png') no-repeat 0 0;
+	background-size: 24px 48px;
+}
+
+.Phone {
+	background: url('images/icon_sprite@2x.png') no-repeat 0 -24px;
+	background-size: 24px 48px;
+}
+
+}
