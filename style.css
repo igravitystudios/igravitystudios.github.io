@@ -1,152 +1,202 @@
-/* -------------------------------------------------------------------------- */
-/* -----| STYLES |----------------------------------------------------------- */
-/* -----| created for iGravity Design 2013 Homepage |------------------------ */
-/* -------------------------------------------------------------------------- */
-
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+/* 
+  http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-/* -------------------------------------------------------------------------- */
-/* -----| GENERAL |---------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-
-body{
-	margin:0;
-	font-family:'Source Sans Pro', sans-serif;
-	font-weight: 300;
-	background: #f9f9f9 url('images/background.png') repeat;
-	font-size:14px;
-	line-height: 1.6em;
-	color: #222;
-	text-shadow: 0 1px 0 #fff;
-}
-a {
-	color: #222;
-	text-decoration: none;
-}
-a:hover {
-	color: #666;
-}
-img{
-	border:none;
-}
-.Left {
-	float:left;
-}
-.Right{
-	float:right;
-}
-
-/* -------------------------------------------------------------------------- */
-/* -----| GENERAL |---------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-
-#SplishSplash {
-	width: 400px;
-	height: 140px;
-	position: absolute;
-	left: 50%;
-	margin-left: -200px;
-	top: 50%;
-	margin-top: -70px;
-	text-align: center;
-}
-
-#SplishSplash h1 {
-	font-size: 48px;
-	line-height: 1.2em;
-	font-weight: 300;
-	text-transform: lowercase;
-	cursor: default;
-}
-
-#SplishSplash h1 span {
-	font-weight: 400;
-}
-
-#SplishSplash p {
-	text-transform: lowercase;
-	font-size: 18px;
-	cursor: default;
-}
-
-#SplishSplash ul {
-	list-style: none;
-	width: 300px;
-	margin: 16px auto 0 auto;
-}
-
-#SplishSplash ul li {
-	float: left;
-	display: block;
-	margin-right: 30px;
-}
-
-#SplishSplash ul li.Last {
-	margin-right: 0;
-}
-
-.Email {
-	float: left;
-	width: 17px;
-	height: 12px;
-	margin: 6px 8px 0 0;
-	background: url('images/icon_sprite.png') no-repeat 0 0;
-}
-
-.Phone {
-	float: left;
-	width: 14px;
-	height: 18px;
-	margin: 2px 8px 0 0;
-	background: url('images/icon_sprite.png') no-repeat 0 -24px;
-}
-
-@media
-(-webkit-min-device-pixel-ratio: 1.5),
-(min-resolution: 144dpi) {
+/* 
+  Splash
+*/
 
 body {
-	background: url ('images/background@2x.png') repeat;
-	background-size: 46px 23px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  background-color: #f9f9f9;
+  background-image: url("images/background.png");
+  background-repeat: repeat;
+  color: #111;
+  text-shadow: 0 1px 0 #fff;
 }
 
-.Email {
-	background: url('images/icon_sprite@2x.png') no-repeat 0 0;
-	background-size: 24px 48px;
+@media (min-resolution: 144dpi) {
+  body {
+    background-image: url("images/background@2x.png");
+    background-size: 46px 23px;
+  }
 }
 
-.Phone {
-	background: url('images/icon_sprite@2x.png') no-repeat 0 -24px;
-	background-size: 24px 48px;
+a {
+  color: #111;
+  text-decoration: none;
+}
+a:hover {
+  color: #666;
+  text-decoration: underline;
+}
+h1 {
+  font-size: 48px;
+  line-height: 1.2em;
+}
+p {
+  font-size: 18px;
+  line-height: 1.2em;
 }
 
+.splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  min-height: 100vh;
+  text-align: center;
+  text-transform: lowercase;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 8px;
+}
+.igravity {
+  font-weight: 300;
+}
+.studios {
+  font-weight: 400;
+}
+
+.tagline,
+.contact,
+.email {
+  padding: 0px 8px 16px 8px;
+}
+
+.tagline {
+  margin-bottom: 40px;
 }
